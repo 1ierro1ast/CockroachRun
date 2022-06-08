@@ -40,11 +40,17 @@ namespace _Internal.CodeBase.Infrastructure.StateMachine.States
 
         private void RegisterServices()
         {
+            RegisterInputService();
             RegisterAssetProvider();
 
             RegisterGameFactory();
             RegisterLevelFactory();
             RegisterPopupFactory();
+        }
+
+        private void RegisterInputService()
+        {
+            _services.RegisterSingle<IInputService>(new InputService());
         }
 
         private void RegisterAssetProvider()
