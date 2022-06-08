@@ -1,18 +1,22 @@
-using System.Collections;
-using System.Collections.Generic;
+using _Internal.CodeBase.Core.Ui;
+using _Internal.CodeBase.Infrastructure.Services;
+using _Internal.CodeBase.Infrastructure.StateMachine.States;
 using UnityEngine;
 
-public class GameBootstraper : MonoBehaviour
+namespace _Internal.CodeBase.Infrastructure
 {
-    // Start is called before the first frame update
-    void Start()
+    public class GameBootstraper : MonoBehaviour, ICoroutineRunner
     {
-        
-    }
+        public LoadingCurtain LoadingCurtain;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        private Game _game;
+
+        private void Awake()
+        {
+            _game = new Game(this, LoadingCurtain, AllServices.Container);
+            _game.StateMachine.Enter<BootstrapState>();
+
+            DontDestroyOnLoad(this);
+        }
     }
 }
