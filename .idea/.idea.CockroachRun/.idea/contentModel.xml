@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Artem\AppData\Local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Artem\AppData\Local\JetBrains\Rider2020.1\resharper-host\Local\Transient\ReSharperHost\v201\SolutionCaches\_CockroachRun.1177145069.00" t="ExcludeRecursive" />
+    <e p="D:\Project\CockroachRun" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="_Internal" t="Include">
+          <e p="CodeBase" t="Include">
+            <e p="Core" t="Include">
+              <e p="Level.cs" t="Include" />
+              <e p="Ui" t="Include">
+                <e p="LoadingCurtain.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Infrastructure" t="Include">
+              <e p="Game.cs" t="Include" />
+              <e p="GameBootstraper.cs" t="Include" />
+              <e p="ICoroutineRunner.cs" t="Include" />
+              <e p="SceneLoader.cs" t="Include" />
+              <e p="Services" t="Include">
+                <e p="AllServices.cs" t="Include" />
+                <e p="AssetManagement" t="Include">
+                  <e p="AssetPath.cs" t="Include" />
+                  <e p="AssetProvider.cs" t="Include" />
+                  <e p="IAssetProvider.cs" t="Include" />
+                </e>
+                <e p="Factories" t="Include">
+                  <e p="GameFactory.cs" t="Include" />
+                  <e p="IGameFactory.cs" t="Include" />
+                  <e p="ILevelFactory.cs" t="Include" />
+                  <e p="IPopupFactory.cs" t="Include" />
+                  <e p="LevelFactory.cs" t="Include" />
+                  <e p="PopupFactory.cs" t="Include" />
+                </e>
+                <e p="IService.cs" t="Include" />
+              </e>
+              <e p="StateMachine" t="Include">
+                <e p="GameStateMachine.cs" t="Include" />
+                <e p="IState.cs" t="Include" />
+                <e p="States" t="Include">
+                  <e p="BootstrapState.cs" t="Include" />
+                  <e p="FinishState.cs" t="Include" />
+                  <e p="GameplayState.cs" t="Include" />
+                  <e p="LoadLevelState.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="TextMesh Pro" t="Include">
+          <e p="Fonts" t="Include">
+            <e p="LiberationSans - OFL.txt" t="Include" />
+          </e>
+          <e p="Resources" t="Include">
+            <e p="LineBreaking Following Characters.txt" t="Include" />
+            <e p="LineBreaking Leading Characters.txt" t="Include" />
+          </e>
+          <e p="Shaders" t="Include">
+            <e p="TMP_Bitmap-Custom-Atlas.shader" t="Include" />
+            <e p="TMP_Bitmap-Mobile.shader" t="Include" />
+            <e p="TMP_Bitmap.shader" t="Include" />
+            <e p="TMP_SDF Overlay.shader" t="Include" />
+            <e p="TMP_SDF SSD.shader" t="Include" />
+            <e p="TMP_SDF-Mobile Masking.shader" t="Include" />
+            <e p="TMP_SDF-Mobile Overlay.shader" t="Include" />
+            <e p="TMP_SDF-Mobile SSD.shader" t="Include" />
+            <e p="TMP_SDF-Mobile.shader" t="Include" />
+            <e p="TMP_SDF-Surface-Mobile.shader" t="Include" />
+            <e p="TMP_SDF-Surface.shader" t="Include" />
+            <e p="TMP_SDF.shader" t="Include" />
+            <e p="TMP_Sprite.shader" t="Include" />
+            <e p="TMPro.cginc" t="Include" />
+            <e p="TMPro_Mobile.cginc" t="Include" />
+            <e p="TMPro_Properties.cginc" t="Include" />
+            <e p="TMPro_Surface.cginc" t="Include" />
+          </e>
+          <e p="Sprites" t="Include">
+            <e p="EmojiOne Attribution.txt" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="CockroachRun.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\Bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

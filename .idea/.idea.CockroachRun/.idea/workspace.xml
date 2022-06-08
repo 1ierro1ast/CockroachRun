@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f7699b0e-d47a-4894-ab9b-c05730a99995" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Level.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Ui/LoadingCurtain.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Game.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/ICoroutineRunner.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/SceneLoader.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/AllServices.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/AssetManagement/AssetPath.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/AssetManagement/AssetProvider.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/AssetManagement/IAssetProvider.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/Factories/GameFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/Factories/IGameFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/Factories/ILevelFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/Factories/IPopupFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/Factories/LevelFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/Factories/PopupFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/IService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/StateMachine/GameStateMachine.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/StateMachine/IState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/StateMachine/States/BootstrapState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/StateMachine/States/FinishState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/StateMachine/States/GameplayState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/StateMachine/States/LoadLevelState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/GameBootstraper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/GameBootstraper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Internal/Scenes/BootScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Internal/Scenes/BootScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Internal/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Internal/Scenes/GameScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Internal/Settings/UniversalRP-HighQuality.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Internal/Settings/UniversalRP-HighQuality.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Internal/Settings/UniversalRP-LowQuality.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Internal/Settings/UniversalRP-LowQuality.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Internal/Settings/UniversalRP-MediumQuality.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Internal/Settings/UniversalRP-MediumQuality.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/PresetManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/PresetManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/StateMachine/States/BootstrapState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/AssetManagement/AssetProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/Factories/LevelFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Level.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/SceneLoader.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Game.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/StateMachine/States/FinishState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Ui/LoadingCurtain.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/StateMachine/States/LoadLevelState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/StateMachine/IState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/Factories/PopupFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/GameBootstraper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/ICoroutineRunner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/Factories/ILevelFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/Factories/GameFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/AssetManagement/IAssetProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/AllServices.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@10.8.1/Runtime/UniversalAdditionalCameraData.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/StateMachine/GameStateMachine.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/Factories/IPopupFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/IService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/AssetManagement/AssetPath.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/Factories/IGameFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/StateMachine/States/GameplayState.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/StateMachine/IState.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Ui/LoadingCurtain.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/AllServices.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/IServices.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/IService.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/StateMachine/StateMachine.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/ICoroutineRunner.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/GameBootstraper.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/SceneLoader.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/AssetManagement/AssetsPath.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/AssetManagement/IAssetProvider.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/AssetManagement/AssetProvider.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/StateMachine/States/BootstrapState.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/Factories/IGameFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Level.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/Factories/LevelFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/AssetManagement/AssetPath.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/Factories/IPopupFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/Factories/PopupFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/Factories/ILevelFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/StateMachine/States/FinishState.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/Factories/GameFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Game.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/StateMachine/States/LoadLevelState.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/StateMachine/States/GameplayState.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/StateMachine/GameStateMachine.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="2AHpFzHgza7vEpILoK88xhw5z7m" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f7699b0e-d47a-4894-ab9b-c05730a99995" name="Default Changelist" comment="" />
+      <created>1654676264765</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1654676264765</updated>
+      <workItem from="1654676269986" duration="5258000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2714" y="256" key="RiderGenerateDialog" timestamp="1654684463952">
+      <screen x="1920" y="30" width="1920" height="1050" />
+    </state>
+    <state x="2714" y="256" key="RiderGenerateDialog/0.30.1920.1050/1920.30.1920.1050@1920.30.1920.1050" timestamp="1654684463952" />
+  </component>
+</project>
