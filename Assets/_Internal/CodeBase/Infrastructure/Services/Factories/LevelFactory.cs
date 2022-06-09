@@ -11,7 +11,7 @@ namespace _Internal.CodeBase.Infrastructure.Services.Factories
         {
             _assetProvider = assetProvider;
         }
-        
+
         public Level CreateLevel(int levelNumber)
         {
             Level level = _assetProvider.Instantiate<Level>(AssetPath.LevelPrefabsPath + $"/Level{levelNumber}");

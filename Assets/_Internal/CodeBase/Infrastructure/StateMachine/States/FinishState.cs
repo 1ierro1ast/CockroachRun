@@ -5,12 +5,12 @@ namespace _Internal.CodeBase.Infrastructure.StateMachine.States
     public class FinishState : IState
     {
         private readonly GameStateMachine _gameStateMachine;
-        private readonly IPopupFactory _popupFactory;
+        private readonly IUiFactory _uiFactory;
 
-        public FinishState(GameStateMachine gameStateMachine, IPopupFactory popupFactory)
+        public FinishState(GameStateMachine gameStateMachine, IUiFactory uiFactory)
         {
             _gameStateMachine = gameStateMachine;
-            _popupFactory = popupFactory;
+            _uiFactory = uiFactory;
         }
 
         public void Exit()

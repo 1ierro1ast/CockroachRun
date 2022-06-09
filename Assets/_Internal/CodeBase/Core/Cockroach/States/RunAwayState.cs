@@ -1,23 +1,32 @@
 ﻿using _Internal.CodeBase.Infrastructure.StateMachine;
+using UnityEngine.AI;
 
 namespace _Internal.CodeBase.Core.States
 {
-    public class RunAwayState : IState
+    public class RunAwayState : IPayloadedState<Threat.Threat>
     {
         private CockroachStateMachine _cockroachStateMachine;
-        public RunAwayState(CockroachStateMachine cockroachStateMachine)
+        private readonly NavMeshAgent _navMeshAgent;
+        private readonly CockroachSensor _cockroachSensor;
+
+        public RunAwayState(CockroachStateMachine cockroachStateMachine, NavMeshAgent navMeshAgent,
+            CockroachSensor cockroachSensor)
         {
             _cockroachStateMachine = cockroachStateMachine;
+            _navMeshAgent = navMeshAgent;
+            _cockroachSensor = cockroachSensor;
         }
 
-        public void Exit()
+        public void Enter(Threat.Threat payload)
         {
-            throw new System.NotImplementedException();
         }
 
         public void Enter()
         {
-            throw new System.NotImplementedException();
+        }
+
+        public void Exit()
+        {
         }
     }
 }

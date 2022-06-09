@@ -1,24 +1,31 @@
 ﻿using _Internal.CodeBase.Core;
 using _Internal.CodeBase.Core.Ui;
+using _Internal.CodeBase.Infrastructure.Services;
 using _Internal.CodeBase.Infrastructure.Services.Factories;
 
 namespace _Internal.CodeBase.Infrastructure.StateMachine.States
 {
-    public class LoadLevelState : IPayloadedState<string>
+    public class LoadGameState : IPayloadedState<string>
     {
         private readonly GameStateMachine _gameStateMachine;
         private readonly SceneLoader _sceneLoader;
         private readonly LoadingCurtain _loadingCurtain;
-        private readonly IGameFactory _gameFactory;
+        private readonly IGameBuilder _gameBuilder;
         private readonly ILevelFactory _levelFactory;
-        
-        public LoadLevelState(GameStateMachine gameStateMachine, SceneLoader sceneLoader, 
-            LoadingCurtain loadingCurtain, ILevelFactory levelFactory)
+        private readonly IGameComponentsFactory _gameComponentsFactory;
+        private readonly IInputService _inputService;
+
+        public LoadGameState(GameStateMachine gameStateMachine, SceneLoader sceneLoader,
+            LoadingCurtain loadingCurtain, ILevelFactory levelFactory, IGameBuilder gameBuilder,
+            IGameComponentsFactory gameComponentsFactory, IInputService inputService)
         {
             _gameStateMachine = gameStateMachine;
             _sceneLoader = sceneLoader;
             _loadingCurtain = loadingCurtain;
             _levelFactory = levelFactory;
+            _gameBuilder = gameBuilder;
+            _gameComponentsFactory = gameComponentsFactory;
+            _inputService = inputService;
         }
 
         public void Enter(string sceneName)
@@ -31,11 +38,10 @@ namespace _Internal.CodeBase.Infrastructure.StateMachine.States
         {
             _loadingCurtain.Hide();
         }
-        
+
         private void OnLoaded()
         {
-            var level = _levelFactory.CreateLevel(1);
-            
+            var level = _gameBuilder.Build(_levelFactory, _gameComponentsFactory, _inputService);
             _gameStateMachine.Enter<GameplayState, Level>(level);
         }
     }

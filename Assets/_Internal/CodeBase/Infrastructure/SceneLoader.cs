@@ -18,7 +18,7 @@ namespace _Internal.CodeBase.Infrastructure
         {
             _coroutineRunner.StartCoroutine(LoadSceneCoroutine(name, validateSceneName, onLoaded));
         }
-        
+
         private IEnumerator LoadSceneCoroutine(string name, bool validateSceneName, Action onLoaded = null)
         {
             if (validateSceneName && SceneManager.GetActiveScene().name == name)
@@ -26,13 +26,13 @@ namespace _Internal.CodeBase.Infrastructure
                 onLoaded?.Invoke();
                 yield break;
             }
-            
+
             AsyncOperation loadOperation = SceneManager.LoadSceneAsync(name);
             loadOperation.allowSceneActivation = false;
 
             yield return new WaitForSeconds(1f);
             loadOperation.allowSceneActivation = true;
-            
+
             while (!loadOperation.isDone)
                 yield return null;
 

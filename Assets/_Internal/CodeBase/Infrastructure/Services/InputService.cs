@@ -7,6 +7,6 @@ namespace _Internal.CodeBase.Infrastructure.Services
     {
         public event Action MouseWheelScrolledDown;
         public event Action MouseWheelScrolledUp;
-        public Vector2 MousePosition { get; }
+        public Vector2 MousePosition => Input.mousePosition;
     }
 }

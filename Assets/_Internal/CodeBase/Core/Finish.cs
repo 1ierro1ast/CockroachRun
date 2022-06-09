@@ -1,6 +1,8 @@
-﻿namespace _Internal.CodeBase.Core
+﻿using UnityEngine;
+
+namespace _Internal.CodeBase.Core
 {
-    public class Finish
+    public class Finish : MonoBehaviour
     {
         
     }

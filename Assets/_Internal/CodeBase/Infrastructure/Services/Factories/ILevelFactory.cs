@@ -4,6 +4,6 @@ namespace _Internal.CodeBase.Infrastructure.Services.Factories
 {
     public interface ILevelFactory : IService
     {
-        Level CreateLevel(int levelNumber);
+        Level CreateLevel(int levelNumber = 1);
     }
 }

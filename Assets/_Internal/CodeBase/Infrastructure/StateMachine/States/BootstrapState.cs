@@ -7,12 +7,12 @@ namespace _Internal.CodeBase.Infrastructure.StateMachine.States
     public class BootstrapState : IState
     {
         private const string BootSceneName = "BootScene";
-        
+
         private readonly GameStateMachine _stateMachine;
         private readonly SceneLoader _sceneLoader;
         private readonly AllServices _services;
         private readonly ICoroutineRunner _coroutineRunner;
-        
+
         public BootstrapState(GameStateMachine stateMachine, SceneLoader sceneLoader, AllServices allServices,
             ICoroutineRunner coroutineRunner)
         {
@@ -20,7 +20,7 @@ namespace _Internal.CodeBase.Infrastructure.StateMachine.States
             _sceneLoader = sceneLoader;
             _services = allServices;
             _coroutineRunner = coroutineRunner;
-            
+
             RegisterServices();
         }
 
@@ -35,7 +35,7 @@ namespace _Internal.CodeBase.Infrastructure.StateMachine.States
 
         private void EnterLoadLevel()
         {
-            _stateMachine.Enter<LoadLevelState, string>("GameScene");
+            _stateMachine.Enter<LoadGameState, string>("GameScene");
         }
 
         private void RegisterServices()
@@ -43,9 +43,16 @@ namespace _Internal.CodeBase.Infrastructure.StateMachine.States
             RegisterInputService();
             RegisterAssetProvider();
 
-            RegisterGameFactory();
             RegisterLevelFactory();
+            RegisterGameComponentsFactory();
+            RegisterGameBuilder();
             RegisterPopupFactory();
+        }
+
+        private void RegisterGameComponentsFactory()
+        {
+            _services.RegisterSingle<IGameComponentsFactory>(
+                new GameComponentsFactory(_services.Single<IAssetProvider>()));
         }
 
         private void RegisterInputService()
@@ -58,10 +65,10 @@ namespace _Internal.CodeBase.Infrastructure.StateMachine.States
             _services.RegisterSingle<IAssetProvider>(new AssetProvider());
         }
 
-        private void RegisterGameFactory()
+        private void RegisterGameBuilder()
         {
-            _services.RegisterSingle<IGameFactory>(
-                new GameFactory(_services.Single<IAssetProvider>()));
+            _services.RegisterSingle<IGameBuilder>(
+                new GameBuilder());
         }
 
         private void RegisterLevelFactory()
@@ -72,8 +79,8 @@ namespace _Internal.CodeBase.Infrastructure.StateMachine.States
 
         private void RegisterPopupFactory()
         {
-            _services.RegisterSingle<IPopupFactory>(
-                new PopupFactory(_services.Single<IAssetProvider>()));
+            _services.RegisterSingle<IUiFactory>(
+                new UiFactory(_services.Single<IAssetProvider>()));
         }
     }
 }

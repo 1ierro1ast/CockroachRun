@@ -15,10 +15,11 @@ namespace _Internal.CodeBase.Infrastructure.StateMachine
             States = new Dictionary<Type, IExitableState>()
             {
                 [typeof(BootstrapState)] = new BootstrapState(this, sceneLoader, services, coroutineRunner),
-                [typeof(LoadLevelState)] = new LoadLevelState(this, sceneLoader, loadingCurtain, 
-                    services.Single<ILevelFactory>()),
-                [typeof(GameplayState)] = new GameplayState(this, services.Single<IPopupFactory>()),
-                [typeof(FinishState)] = new FinishState(this, services.Single<IPopupFactory>()),
+                [typeof(LoadGameState)] = new LoadGameState(this, sceneLoader, loadingCurtain,
+                    services.Single<ILevelFactory>(), services.Single<IGameBuilder>(),
+                    services.Single<IGameComponentsFactory>(), services.Single<IInputService>()),
+                [typeof(GameplayState)] = new GameplayState(this, services.Single<IUiFactory>()),
+                [typeof(FinishState)] = new FinishState(this, services.Single<IUiFactory>()),
             };
         }
     }

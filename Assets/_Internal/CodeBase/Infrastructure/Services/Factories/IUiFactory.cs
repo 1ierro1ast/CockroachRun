@@ -1,7 +1,7 @@
 ﻿namespace _Internal.CodeBase.Infrastructure.Services.Factories
 {
-    public interface IPopupFactory : IService
+    public interface IUiFactory : IService
     {
-        
+        void CreateHud();
     }
 }

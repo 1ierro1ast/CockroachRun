@@ -30,7 +30,7 @@ namespace _Internal.CodeBase.Core.Ui
                 _curtain.alpha -= 0.03f;
                 yield return new WaitForSeconds(0.03f);
             }
-            
+
             gameObject.SetActive(false);
         }
     }

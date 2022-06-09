@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using _Internal.CodeBase.Core.States;
+using UnityEngine;
 using UnityEngine.AI;
 
 namespace _Internal.CodeBase.Core.Cockroach
@@ -10,12 +11,24 @@ namespace _Internal.CodeBase.Core.Cockroach
         private NavMeshAgent _navMeshAgent;
         private CockroachSensor _cockroachSensor;
         private CockroachStateMachine _cockroachStateMachine;
+        private Finish _finish;
 
-        private void Awake()
+        public void Initialize(Transform levelStartPoint, Finish levelFinish)
         {
+            SetStartPosition(levelStartPoint);
+            _finish = levelFinish;
+
             _cockroachSensor = GetComponent<CockroachSensor>();
             _navMeshAgent = GetComponent<NavMeshAgent>();
-            _cockroachStateMachine = new CockroachStateMachine(_navMeshAgent, _cockroachSensor);
+
+            _cockroachStateMachine = new CockroachStateMachine(_navMeshAgent, _cockroachSensor, _finish);
+            _cockroachStateMachine.Enter<RunToDestinationState>();
+        }
+
+        private void SetStartPosition(Transform levelStartPoint)
+        {
+            transform.position = levelStartPoint.position;
+            transform.rotation = levelStartPoint.rotation;
         }
     }
 }

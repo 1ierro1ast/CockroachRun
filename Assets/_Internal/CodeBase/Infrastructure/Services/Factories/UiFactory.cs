@@ -2,11 +2,11 @@
 
 namespace _Internal.CodeBase.Infrastructure.Services.Factories
 {
-    public class GameFactory : IGameFactory
+    public class UiFactory : IUiFactory
     {
-        private readonly IAssetProvider _assetProvider;
+        private IAssetProvider _assetProvider;
 
-        public GameFactory(IAssetProvider assetProvider)
+        public UiFactory(IAssetProvider assetProvider)
         {
             _assetProvider = assetProvider;
         }

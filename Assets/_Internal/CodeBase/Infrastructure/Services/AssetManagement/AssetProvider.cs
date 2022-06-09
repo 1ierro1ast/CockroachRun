@@ -15,7 +15,7 @@ namespace _Internal.CodeBase.Infrastructure.Services.AssetManagement
             var prefab = Resources.Load<GameObject>(path);
             return Object.Instantiate(prefab, at, Quaternion.identity);
         }
-        
+
         public GameObject Instantiate(string path, Transform parent)
         {
             var prefab = Resources.Load<GameObject>(path);
