@@ -1,4 +1,5 @@
 ﻿using _Internal.CodeBase.Core.States;
+using _Internal.CodeBase.Infrastructure;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -6,7 +7,7 @@ namespace _Internal.CodeBase.Core.Cockroach
 {
     [RequireComponent(typeof(NavMeshAgent))]
     [RequireComponent(typeof(CockroachSensor))]
-    public class Cockroach : MonoBehaviour
+    public class Cockroach : MonoBehaviour, ICoroutineRunner
     {
         private NavMeshAgent _navMeshAgent;
         private CockroachSensor _cockroachSensor;
@@ -21,7 +22,7 @@ namespace _Internal.CodeBase.Core.Cockroach
             _cockroachSensor = GetComponent<CockroachSensor>();
             _navMeshAgent = GetComponent<NavMeshAgent>();
 
-            _cockroachStateMachine = new CockroachStateMachine(_navMeshAgent, _cockroachSensor, _finish);
+            _cockroachStateMachine = new CockroachStateMachine(_navMeshAgent, _cockroachSensor, _finish, this);
             _cockroachStateMachine.Enter<RunToDestinationState>();
         }
 

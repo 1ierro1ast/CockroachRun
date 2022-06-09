@@ -57,7 +57,7 @@ namespace _Internal.CodeBase.Infrastructure.StateMachine.States
 
         private void RegisterInputService()
         {
-            _services.RegisterSingle<IInputService>(new InputService());
+            _services.RegisterSingle<IInputService>(new InputService(_coroutineRunner));
         }
 
         private void RegisterAssetProvider()

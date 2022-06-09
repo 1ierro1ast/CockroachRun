@@ -11,7 +11,7 @@ namespace _Internal.CodeBase.Core
 
         private void OnTriggerEnter(Collider other)
         {
-            if (other.TryGetComponent(out Threat.Threat threat))
+            if (other.transform.parent.TryGetComponent(out Threat.Threat threat))
             {
                 ThreatDetected?.Invoke(threat);
             }
