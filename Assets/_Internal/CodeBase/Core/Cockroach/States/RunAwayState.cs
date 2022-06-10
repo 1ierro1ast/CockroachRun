@@ -11,14 +11,16 @@ namespace _Internal.CodeBase.Core.States
         private CockroachStateMachine _cockroachStateMachine;
         private readonly NavMeshAgent _navMeshAgent;
         private readonly CockroachSensor _cockroachSensor;
+        private readonly Transform _levelStartPoint;
         private readonly ICoroutineRunner _coroutineRunner;
 
         public RunAwayState(CockroachStateMachine cockroachStateMachine, NavMeshAgent navMeshAgent,
-            CockroachSensor cockroachSensor, ICoroutineRunner coroutineRunner)
+            CockroachSensor cockroachSensor, Transform levelStartPoint, ICoroutineRunner coroutineRunner)
         {
             _cockroachStateMachine = cockroachStateMachine;
             _navMeshAgent = navMeshAgent;
             _cockroachSensor = cockroachSensor;
+            _levelStartPoint = levelStartPoint;
             _coroutineRunner = coroutineRunner;
         }
 
@@ -26,9 +28,11 @@ namespace _Internal.CodeBase.Core.States
         {
             var targetPosition = (threat.transform.position - _navMeshAgent.transform.position).normalized *
                                  (threat.Radius + 5);
+            var go = new GameObject("new");
+            go.transform.position = targetPosition;
             _navMeshAgent.speed = 5;
             _navMeshAgent.SetDestination(targetPosition);
-            //_coroutineRunner.StartCoroutine(CheckDestination());
+            _coroutineRunner.StartCoroutine(RunAwayTimer());
         }
 
         public void Enter()
@@ -40,12 +44,9 @@ namespace _Internal.CodeBase.Core.States
             _navMeshAgent.speed = 3.5f;
         }
 
-        private IEnumerator CheckDestination()
+        private IEnumerator RunAwayTimer()
         {
-            while (_navMeshAgent.pathStatus != NavMeshPathStatus.PathComplete)
-            {
-                yield return new WaitForEndOfFrame();
-            }
+            yield return new WaitForSeconds(2f);
             _cockroachStateMachine.Enter<RunToDestinationState>();
         }
     }

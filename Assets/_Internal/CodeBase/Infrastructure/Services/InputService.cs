@@ -21,18 +21,26 @@ namespace _Internal.CodeBase.Infrastructure.Services
         {
             while (true)
             {
-                Debug.Log(Input.mouseScrollDelta*10);
-                if (Input.mouseScrollDelta.y > 0)
+                if (GetMouseScrollUp())
                 {
-                    Debug.Log(1);
                     MouseWheelScrolledUp?.Invoke();
                 }
-                if (Input.mouseScrollDelta.y < 0)
+                if (GetMouseScrollDown())
                 {
                     MouseWheelScrolledDown?.Invoke();
                 }
-                yield return new WaitForEndOfFrame();
+                yield return null;
             }
+        }
+
+        private bool GetMouseScrollDown()
+        {
+            return Input.mouseScrollDelta.y < 0;
+        }
+
+        private bool GetMouseScrollUp()
+        {
+            return Input.mouseScrollDelta.y > 0;
         }
     }
 }

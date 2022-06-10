@@ -22,7 +22,7 @@ namespace _Internal.CodeBase.Core.Cockroach
             _cockroachSensor = GetComponent<CockroachSensor>();
             _navMeshAgent = GetComponent<NavMeshAgent>();
 
-            _cockroachStateMachine = new CockroachStateMachine(_navMeshAgent, _cockroachSensor, _finish, this);
+            _cockroachStateMachine = new CockroachStateMachine(_navMeshAgent, _cockroachSensor, _finish, levelStartPoint, this);
             _cockroachStateMachine.Enter<RunToDestinationState>();
         }
 
