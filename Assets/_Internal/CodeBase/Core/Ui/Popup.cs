@@ -1,16 +1,24 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Popup : MonoBehaviour
+namespace _Internal.CodeBase.Core.Ui
 {
-    // Start is called before the first frame update
-    void Start()
+    public class Popup : MonoBehaviour
     {
-    }
+        private GameObject _body;
 
-    // Update is called once per frame
-    void Update()
-    {
+        private void Awake()
+        {
+            _body = transform.GetChild(0).gameObject;
+        }
+
+        public void Open()
+        {
+            _body.SetActive(true);
+        }
+
+        public void Close()
+        { 
+            _body.SetActive(false);
+        }
     }
 }

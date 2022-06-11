@@ -14,10 +14,11 @@ namespace _Internal.CodeBase.Infrastructure.StateMachine.States
         private readonly ILevelFactory _levelFactory;
         private readonly IGameComponentsFactory _gameComponentsFactory;
         private readonly IInputService _inputService;
+        private readonly IUiFactory _uiFactory;
 
         public LoadGameState(GameStateMachine gameStateMachine, SceneLoader sceneLoader,
             LoadingCurtain loadingCurtain, ILevelFactory levelFactory, IGameBuilder gameBuilder,
-            IGameComponentsFactory gameComponentsFactory, IInputService inputService)
+            IGameComponentsFactory gameComponentsFactory, IInputService inputService, IUiFactory uiFactory)
         {
             _gameStateMachine = gameStateMachine;
             _sceneLoader = sceneLoader;
@@ -26,6 +27,7 @@ namespace _Internal.CodeBase.Infrastructure.StateMachine.States
             _gameBuilder = gameBuilder;
             _gameComponentsFactory = gameComponentsFactory;
             _inputService = inputService;
+            _uiFactory = uiFactory;
         }
 
         public void Enter(string sceneName)
@@ -41,7 +43,7 @@ namespace _Internal.CodeBase.Infrastructure.StateMachine.States
 
         private void OnLoaded()
         {
-            var level = _gameBuilder.Build(_levelFactory, _gameComponentsFactory, _inputService);
+            var level = _gameBuilder.Build(_levelFactory, _gameComponentsFactory, _inputService, _uiFactory);
             _gameStateMachine.Enter<GameplayState, Level>(level);
         }
     }

@@ -178,6 +178,7 @@ GameObject:
   - component: {fileID: 5987617560981868230}
   - component: {fileID: 5987617560981868231}
   - component: {fileID: 5987617560981868228}
+  - component: {fileID: 4528664418229666018}
   m_Layer: 5
   m_Name: FinishPopup
   m_TagString: Untagged
@@ -266,6 +267,19 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &4528664418229666018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5987617560981868229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e501c521b0aa417c8995d7852e907fb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _tryAgainButton: {fileID: 5987617560427100619}
 --- !u!1 &5987617561997692580
 GameObject:
   m_ObjectHideFlags: 0

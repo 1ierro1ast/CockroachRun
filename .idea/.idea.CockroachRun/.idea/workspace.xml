@@ -20,18 +20,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f7699b0e-d47a-4894-ab9b-c05730a99995" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.CockroachRun/.idea/.idea.CockroachRun.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.CockroachRun/.idea/contentModel.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.CockroachRun/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.CockroachRun/riderModule.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Ui/FinishPopup.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Ui/FinishPopup.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CockroachRun/.idea/.idea.CockroachRun.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CockroachRun/.idea/contentModel.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CockroachRun/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CockroachRun/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CockroachRun/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CockroachRun/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CockroachRun/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Cockroach/Cockroach.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Cockroach/Cockroach.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Cockroach/CockroachStateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Cockroach/CockroachStateMachine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CockroachRun/riderModule.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Cockroach/States/RunAwayState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Cockroach/States/RunAwayState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/InputService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/InputService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Internal/Resources/GameComponents/Cockroach.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Internal/Resources/GameComponents/Cockroach.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Cockroach/States/RunToDestinationState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Cockroach/States/RunToDestinationState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Finish.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Finish.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Threat/Threat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Threat/Threat.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Threat/ThreatScaler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Threat/ThreatScaler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Ui/Popup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Ui/Popup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/AssetManagement/AssetPath.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/AssetManagement/AssetPath.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/Factories/IUiFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/Factories/IUiFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/Factories/UiFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/Factories/UiFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/GameBuilder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/GameBuilder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/IGameBuilder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/IGameBuilder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/StateMachine/GameStateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/StateMachine/GameStateMachine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/StateMachine/States/GameplayState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/StateMachine/States/GameplayState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/StateMachine/States/LoadGameState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/StateMachine/States/LoadGameState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Internal/Resources/Ui/FinishPopup.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Internal/Resources/Ui/FinishPopup.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Internal/Resources/Ui/Hud.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Internal/Resources/Ui/Hud.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Internal/Scenes/BootScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Internal/Scenes/BootScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,38 +57,38 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/StateMachine/States/BootstrapState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/Factories/LevelFactory.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Finish.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/SceneLoader.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/StateMachine/BaseStateMachine.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Threat/Threat.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Cockroach/CockroachSensor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Game.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/StateMachine/IState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/GameBootstraper.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Threat/ThreatMover.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Ui/Popup.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/StateMachine/GameStateMachine.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/InputService.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/AssetManagement/AssetPath.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/IInputService.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/StateMachine/States/GameplayState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/AssetManagement/AssetProvider.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Level.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/StateMachine/States/FinishState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Ui/LoadingCurtain.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Cockroach/States/RunToDestinationState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/Factories/UiFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/Factories/ILevelFactory.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/ICoroutineRunner.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Cockroach/CockroachStateMachine.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Cockroach/States/RunAwayState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/AssetManagement/AssetPath.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/AssetManagement/IAssetProvider.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Cockroach/Cockroach.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/AllServices.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Level.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Cockroach/CockroachSensor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@10.8.1/Runtime/UniversalAdditionalCameraData.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/IService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/AllServices.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/Factories/UiFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/StateMachine/IState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/StateMachine/States/BootstrapState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/AssetManagement/AssetProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Cockroach/Cockroach.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/StateMachine/BaseStateMachine.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/GameBootstraper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/StateMachine/States/FinishState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Game.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/StateMachine/GameStateMachine.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/StateMachine/States/GameplayState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/ICoroutineRunner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/Factories/LevelFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Ui/Popup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Threat/Threat.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Threat/ThreatMover.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/IInputService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Cockroach/CockroachStateMachine.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/InputService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Finish.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Cockroach/States/RunToDestinationState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/SceneLoader.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Cockroach/States/RunAwayState.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -144,16 +159,24 @@
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
       <method v="2" />
     </configuration>
     <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
       <method v="2" />
     </configuration>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -169,11 +192,12 @@
       <workItem from="1654772955729" duration="5297000" />
       <workItem from="1654797780591" duration="2915000" />
       <workItem from="1654846248271" duration="4435000" />
+      <workItem from="1654939333633" duration="5304000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
@@ -188,7 +212,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />

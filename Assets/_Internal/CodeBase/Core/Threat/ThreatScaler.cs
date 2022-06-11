@@ -8,6 +8,7 @@ namespace _Internal.CodeBase.Core.Threat
     {
         [SerializeField] private float _radius;
         private Transform _view;
+        public event Action<float> ThreatScaleUpdate;
         public float Radius => _radius;
         
         private IInputService _inputService;
@@ -33,18 +34,26 @@ namespace _Internal.CodeBase.Core.Threat
         private void InputServiceOnMouseWheelScrolledDown()
         {
             _radius -= 0.1f;
+            _radius = ValidateRadius();
             UpdateViewSize();
         }
 
         private void InputServiceOnMouseWheelScrolledUp()
         {
             _radius += 0.1f;
+            _radius = ValidateRadius();
             UpdateViewSize();
+        }
+
+        private float ValidateRadius()
+        {
+            return Mathf.Clamp(_radius, 0.5f, 10f);
         }
 
         private void UpdateViewSize()
         {
             _view.localScale = new Vector3(_radius, _radius, _radius);
+            ThreatScaleUpdate?.Invoke(_radius);
         }
     }
 }

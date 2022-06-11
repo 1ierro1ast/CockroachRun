@@ -1,4 +1,5 @@
-﻿using _Internal.CodeBase.Infrastructure.Services.AssetManagement;
+﻿using _Internal.CodeBase.Core.Ui;
+using _Internal.CodeBase.Infrastructure.Services.AssetManagement;
 
 namespace _Internal.CodeBase.Infrastructure.Services.Factories
 {
@@ -11,9 +12,14 @@ namespace _Internal.CodeBase.Infrastructure.Services.Factories
             _assetProvider = assetProvider;
         }
         
-        public void CreateHud()
+        public Hud CreateHud()
         {
-            var hud = _assetProvider.Instantiate(AssetPath.HudPath);
+            return _assetProvider.Instantiate<Hud>(AssetPath.HudPath);
+        }
+
+        public FinishPopup CreateFinishPopup()
+        {
+            return _assetProvider.Instantiate<FinishPopup>(AssetPath.FinishPopupPath);
         }
     }
 }

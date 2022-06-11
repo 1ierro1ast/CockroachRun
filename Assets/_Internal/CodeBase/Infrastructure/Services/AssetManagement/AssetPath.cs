@@ -8,5 +8,6 @@
 
         public const string CockroachPath = "GameComponents/Cockroach";
         public const string ThreatPath = "GameComponents/Threat";
+        public const string FinishPopupPath = "Ui/FinishPopup";
     }
 }

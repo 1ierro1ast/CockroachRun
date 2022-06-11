@@ -6,7 +6,7 @@ using UnityEngine.AI;
 
 namespace _Internal.CodeBase.Core.States
 {
-    public class RunAwayState : IPayloadedState<Threat.Threat>
+    public class RunAwayState : IState
     {
         private CockroachStateMachine _cockroachStateMachine;
         private readonly NavMeshAgent _navMeshAgent;
@@ -24,19 +24,18 @@ namespace _Internal.CodeBase.Core.States
             _coroutineRunner = coroutineRunner;
         }
 
-        public void Enter(Threat.Threat threat)
-        {
-            var targetPosition = (threat.transform.position - _navMeshAgent.transform.position).normalized *
-                                 (threat.Radius + 5);
-            var go = new GameObject("new");
-            go.transform.position = targetPosition;
-            _navMeshAgent.speed = 5;
-            _navMeshAgent.SetDestination(targetPosition);
-            _coroutineRunner.StartCoroutine(RunAwayTimer());
-        }
-
         public void Enter()
         {
+            var targetPosition = GetRandomPointNearToStartPoint(4);
+            _navMeshAgent.speed = 5;
+            _navMeshAgent.SetDestination(targetPosition);
+            _coroutineRunner.StartCoroutine(RunAwayTimer(2));
+        }
+
+        private Vector3 GetRandomPointNearToStartPoint(float radius = 1)
+        {
+            var randomPoint = Random.insideUnitCircle * radius ;
+            return new Vector3(randomPoint.x, 0, randomPoint.y) + _levelStartPoint.position;
         }
 
         public void Exit()
@@ -44,9 +43,9 @@ namespace _Internal.CodeBase.Core.States
             _navMeshAgent.speed = 3.5f;
         }
 
-        private IEnumerator RunAwayTimer()
+        private IEnumerator RunAwayTimer(float time)
         {
-            yield return new WaitForSeconds(2f);
+            yield return new WaitForSeconds(time);
             _cockroachStateMachine.Enter<RunToDestinationState>();
         }
     }

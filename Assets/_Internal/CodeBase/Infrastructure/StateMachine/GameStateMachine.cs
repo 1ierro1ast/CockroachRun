@@ -17,10 +17,12 @@ namespace _Internal.CodeBase.Infrastructure.StateMachine
                 [typeof(BootstrapState)] = new BootstrapState(this, sceneLoader, services, coroutineRunner),
                 [typeof(LoadGameState)] = new LoadGameState(this, sceneLoader, loadingCurtain,
                     services.Single<ILevelFactory>(), services.Single<IGameBuilder>(),
-                    services.Single<IGameComponentsFactory>(), services.Single<IInputService>()),
+                    services.Single<IGameComponentsFactory>(), services.Single<IInputService>(),
+                    services.Single<IUiFactory>()),
                 [typeof(GameplayState)] = new GameplayState(this, services.Single<IUiFactory>()),
                 [typeof(FinishState)] = new FinishState(this, services.Single<IUiFactory>()),
             };
+            
         }
     }
 }

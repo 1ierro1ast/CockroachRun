@@ -36,12 +36,12 @@ namespace _Internal.CodeBase.Core.States
 
         private void CockroachSensorOnThreatDetected(Threat.Threat threat)
         {
-            _cockroachStateMachine.Enter<RunAwayState, Threat.Threat>(threat);
+            _cockroachStateMachine.Enter<RunAwayState>();
         }
 
         private void CockroachSensorOnReachedTheFinish()
         {
-            Debug.Log("FINISH");
+            _finish.BroadcastFinish();
         }
     }
 }
