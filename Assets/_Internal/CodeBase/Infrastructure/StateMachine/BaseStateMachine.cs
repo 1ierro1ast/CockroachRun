@@ -5,7 +5,7 @@ namespace _Internal.CodeBase.Infrastructure.StateMachine
 {
     public abstract class BaseStateMachine
     {
-        protected IExitableState ActiveState;
+        private IExitableState _activeState;
         protected Dictionary<Type, IExitableState> States;
 
         public void Enter<TState>() where TState : class, IState
@@ -22,10 +22,10 @@ namespace _Internal.CodeBase.Infrastructure.StateMachine
 
         private TState ChangeState<TState>() where TState : class, IExitableState
         {
-            ActiveState?.Exit();
+            _activeState?.Exit();
             
             var state = GetState<TState>();
-            ActiveState = state;
+            _activeState = state;
             
             return state;
         }

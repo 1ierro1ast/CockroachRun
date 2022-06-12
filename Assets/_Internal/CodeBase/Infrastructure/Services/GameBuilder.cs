@@ -2,8 +2,9 @@
 using _Internal.CodeBase.Core.Cockroach;
 using _Internal.CodeBase.Core.Threat;
 using _Internal.CodeBase.Core.Ui;
+using _Internal.CodeBase.Infrastructure.Services.Factories;
 
-namespace _Internal.CodeBase.Infrastructure.Services.Factories
+namespace _Internal.CodeBase.Infrastructure.Services
 {
     public class GameBuilder : IGameBuilder
     {
@@ -19,6 +20,7 @@ namespace _Internal.CodeBase.Infrastructure.Services.Factories
             cockroach.Initialize(level.StartPoint, level.Finish);
             threat.Initialize(inputService);
             hud.RadiusView.Initialize(threat.ThreatScaler);
+            
             return level;
         }
     }

@@ -6,15 +6,13 @@ namespace _Internal.CodeBase.Infrastructure.Services
 {
     public class InputService : IInputService
     {
-        private readonly ICoroutineRunner _coroutineRunner;
         public event Action MouseWheelScrolledDown;
         public event Action MouseWheelScrolledUp;
         public Vector2 MousePosition => Input.mousePosition;
 
         public InputService(ICoroutineRunner coroutineRunner)
         {
-            _coroutineRunner = coroutineRunner;
-            _coroutineRunner.StartCoroutine(HandleMouseWheelScrolling());
+            coroutineRunner.StartCoroutine(HandleMouseWheelScrolling());
         }
 
         private IEnumerator HandleMouseWheelScrolling()

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5987617560344464482}
   - component: {fileID: 5987617560344464485}
+  - component: {fileID: 1085792267228726306}
   m_Layer: 5
   m_Name: Body
   m_TagString: Untagged
@@ -45,6 +46,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5987617560344464483}
   m_CullTransparentMesh: 1
+--- !u!95 &1085792267228726306
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5987617560344464483}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 36f91578bd0ac83429c83682f73ceac4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5987617560427100617
 GameObject:
   m_ObjectHideFlags: 0
@@ -279,7 +299,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e501c521b0aa417c8995d7852e907fb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _tryAgainButton: {fileID: 5987617560427100619}
+  <TryAgainButton>k__BackingField: {fileID: 5987617560427100619}
 --- !u!1 &5987617561997692580
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,22 +4,20 @@ using _Internal.CodeBase.Infrastructure.StateMachine;
 using UnityEngine;
 using UnityEngine.AI;
 
-namespace _Internal.CodeBase.Core.States
+namespace _Internal.CodeBase.Core.Cockroach.States
 {
     public class RunAwayState : IState
     {
-        private CockroachStateMachine _cockroachStateMachine;
+        private readonly CockroachStateMachine _cockroachStateMachine;
         private readonly NavMeshAgent _navMeshAgent;
-        private readonly CockroachSensor _cockroachSensor;
         private readonly Transform _levelStartPoint;
         private readonly ICoroutineRunner _coroutineRunner;
 
-        public RunAwayState(CockroachStateMachine cockroachStateMachine, NavMeshAgent navMeshAgent,
-            CockroachSensor cockroachSensor, Transform levelStartPoint, ICoroutineRunner coroutineRunner)
+        public RunAwayState(CockroachStateMachine cockroachStateMachine, NavMeshAgent navMeshAgent, 
+            Transform levelStartPoint, ICoroutineRunner coroutineRunner)
         {
             _cockroachStateMachine = cockroachStateMachine;
             _navMeshAgent = navMeshAgent;
-            _cockroachSensor = cockroachSensor;
             _levelStartPoint = levelStartPoint;
             _coroutineRunner = coroutineRunner;
         }

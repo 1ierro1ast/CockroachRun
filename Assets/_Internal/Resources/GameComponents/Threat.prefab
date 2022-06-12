@@ -70,7 +70,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1b99ed83e204f95b73deb519fb9e27c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _radius: 1
+  <Radius>k__BackingField: 1
 --- !u!1 &8518884840619430093
 GameObject:
   m_ObjectHideFlags: 0

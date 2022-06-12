@@ -5,7 +5,7 @@ namespace _Internal.CodeBase.Infrastructure.Services.Factories
 {
     public class LevelFactory : ILevelFactory
     {
-        private IAssetProvider _assetProvider;
+        private readonly IAssetProvider _assetProvider;
 
         public LevelFactory(IAssetProvider assetProvider)
         {

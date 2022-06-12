@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using _Internal.CodeBase.Core.States;
+using _Internal.CodeBase.Core.Cockroach.States;
 using _Internal.CodeBase.Infrastructure;
 using _Internal.CodeBase.Infrastructure.StateMachine;
 using UnityEngine;
 using UnityEngine.AI;
 
-namespace _Internal.CodeBase.Core
+namespace _Internal.CodeBase.Core.Cockroach
 {
     public class CockroachStateMachine : BaseStateMachine
     {
@@ -17,7 +17,7 @@ namespace _Internal.CodeBase.Core
             {
                 [typeof(RunToDestinationState)] =
                     new RunToDestinationState(this, navMeshAgent, cockroachSensor, finish),
-                [typeof(RunAwayState)] = new RunAwayState(this, navMeshAgent, cockroachSensor, levelStartPoint , coroutineRunner)
+                [typeof(RunAwayState)] = new RunAwayState(this, navMeshAgent, levelStartPoint , coroutineRunner)
             };
         }
     }

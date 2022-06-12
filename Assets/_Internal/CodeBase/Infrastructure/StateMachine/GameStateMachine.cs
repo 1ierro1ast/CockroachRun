@@ -19,10 +19,9 @@ namespace _Internal.CodeBase.Infrastructure.StateMachine
                     services.Single<ILevelFactory>(), services.Single<IGameBuilder>(),
                     services.Single<IGameComponentsFactory>(), services.Single<IInputService>(),
                     services.Single<IUiFactory>()),
-                [typeof(GameplayState)] = new GameplayState(this, services.Single<IUiFactory>()),
+                [typeof(GameplayState)] = new GameplayState(this),
                 [typeof(FinishState)] = new FinishState(this, services.Single<IUiFactory>()),
             };
-            
         }
     }
 }

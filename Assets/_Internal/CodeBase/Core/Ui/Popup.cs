@@ -4,21 +4,23 @@ namespace _Internal.CodeBase.Core.Ui
 {
     public class Popup : MonoBehaviour
     {
-        private GameObject _body;
+        private Animator _body;
+        private static readonly int OpenAnimation = Animator.StringToHash("Open");
+        private static readonly int CloseAnimation = Animator.StringToHash("Close");
 
         private void Awake()
         {
-            _body = transform.GetChild(0).gameObject;
+            _body = transform.GetComponentInChildren<Animator>();
         }
 
         public void Open()
         {
-            _body.SetActive(true);
+            _body.SetTrigger(OpenAnimation);
         }
 
         public void Close()
         { 
-            _body.SetActive(false);
+            _body.SetTrigger(CloseAnimation);
         }
     }
 }

@@ -5,7 +5,7 @@ namespace _Internal.CodeBase.Infrastructure.Services.Factories
 {
     public class UiFactory : IUiFactory
     {
-        private IAssetProvider _assetProvider;
+        private readonly IAssetProvider _assetProvider;
 
         public UiFactory(IAssetProvider assetProvider)
         {

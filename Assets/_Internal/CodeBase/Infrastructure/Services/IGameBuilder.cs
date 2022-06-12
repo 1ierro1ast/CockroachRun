@@ -1,6 +1,7 @@
 ﻿using _Internal.CodeBase.Core;
+using _Internal.CodeBase.Infrastructure.Services.Factories;
 
-namespace _Internal.CodeBase.Infrastructure.Services.Factories
+namespace _Internal.CodeBase.Infrastructure.Services
 {
     public interface IGameBuilder : IService
     {

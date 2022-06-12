@@ -13,7 +13,6 @@ namespace _Internal.CodeBase.Core.Ui
         private void Awake()
         {
             _text = GetComponent<TMP_Text>();
-            
         }
 
         public void Initialize(ThreatScaler threatThreatScaler)

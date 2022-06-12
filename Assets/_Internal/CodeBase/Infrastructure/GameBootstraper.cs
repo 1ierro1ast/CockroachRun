@@ -7,13 +7,13 @@ namespace _Internal.CodeBase.Infrastructure
 {
     public class GameBootstraper : MonoBehaviour, ICoroutineRunner
     {
-        public LoadingCurtain LoadingCurtain;
+        [SerializeField] private LoadingCurtain _loadingCurtain;
 
         private Game _game;
 
         private void Awake()
         {
-            _game = new Game(this, LoadingCurtain, AllServices.Container);
+            _game = new Game(this, _loadingCurtain, AllServices.Container);
             _game.StateMachine.Enter<BootstrapState>();
 
             DontDestroyOnLoad(this);

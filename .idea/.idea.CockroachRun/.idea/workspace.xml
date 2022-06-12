@@ -20,33 +20,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f7699b0e-d47a-4894-ab9b-c05730a99995" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Ui/FinishPopup.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Ui/FinishPopup.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CockroachRun/.idea/.idea.CockroachRun.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CockroachRun/.idea/contentModel.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CockroachRun/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CockroachRun/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CockroachRun/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CockroachRun/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CockroachRun/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CockroachRun/riderModule.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Cockroach/Cockroach.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Cockroach/Cockroach.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Cockroach/CockroachSensor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Cockroach/CockroachSensor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Cockroach/CockroachStateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Cockroach/CockroachStateMachine.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Cockroach/States/RunAwayState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Cockroach/States/RunAwayState.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Cockroach/States/RunToDestinationState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Cockroach/States/RunToDestinationState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Finish.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Finish.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Level.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Level.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Threat/Threat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Threat/Threat.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Threat/ThreatScaler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Threat/ThreatScaler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Ui/FinishPopup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Ui/FinishPopup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Ui/Hud.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Ui/Hud.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Ui/LoadingCurtain.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Ui/LoadingCurtain.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Ui/Popup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Ui/Popup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/AssetManagement/AssetPath.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/AssetManagement/AssetPath.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/Factories/IUiFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/Factories/IUiFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Ui/RadiusView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Core/Ui/RadiusView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/GameBootstraper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/GameBootstraper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/Factories/LevelFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/Factories/LevelFactory.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/Factories/UiFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/Factories/UiFactory.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/GameBuilder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/GameBuilder.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/IGameBuilder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/IGameBuilder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/InputService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/Services/InputService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/StateMachine/BaseStateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/StateMachine/BaseStateMachine.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/StateMachine/GameStateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/StateMachine/GameStateMachine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/StateMachine/States/FinishState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/StateMachine/States/FinishState.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/StateMachine/States/GameplayState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/StateMachine/States/GameplayState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/StateMachine/States/LoadGameState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Internal/CodeBase/Infrastructure/StateMachine/States/LoadGameState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Internal/Prefabs/Ui/LoadingCurtain.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Internal/Prefabs/Ui/LoadingCurtain.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Internal/Resources/GameComponents/Threat.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Internal/Resources/GameComponents/Threat.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Internal/Resources/Levels/Level1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Internal/Resources/Levels/Level1.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Internal/Resources/Ui/FinishPopup.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Internal/Resources/Ui/FinishPopup.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Internal/Resources/Ui/Hud.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Internal/Resources/Ui/Hud.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Internal/Scenes/BootScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Internal/Scenes/BootScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Internal/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Internal/Scenes/GameScene.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +196,8 @@
       <workItem from="1654772955729" duration="5297000" />
       <workItem from="1654797780591" duration="2915000" />
       <workItem from="1654846248271" duration="4435000" />
-      <workItem from="1654939333633" duration="5304000" />
+      <workItem from="1654939333633" duration="5775000" />
+      <workItem from="1655016560406" duration="4520000" />
     </task>
     <servers />
   </component>

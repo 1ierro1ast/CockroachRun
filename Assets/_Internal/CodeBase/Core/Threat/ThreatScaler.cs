@@ -6,10 +6,9 @@ namespace _Internal.CodeBase.Core.Threat
 {
     public class ThreatScaler : MonoBehaviour
     {
-        [SerializeField] private float _radius;
+        [field: SerializeField] public float Radius { get; private set; }
         private Transform _view;
         public event Action<float> ThreatScaleUpdate;
-        public float Radius => _radius;
         
         private IInputService _inputService;
 
@@ -33,27 +32,27 @@ namespace _Internal.CodeBase.Core.Threat
 
         private void InputServiceOnMouseWheelScrolledDown()
         {
-            _radius -= 0.1f;
-            _radius = ValidateRadius();
+            Radius -= 0.1f;
+            Radius = ValidateRadius();
             UpdateViewSize();
         }
 
         private void InputServiceOnMouseWheelScrolledUp()
         {
-            _radius += 0.1f;
-            _radius = ValidateRadius();
+            Radius += 0.1f;
+            Radius = ValidateRadius();
             UpdateViewSize();
+        }
+        
+        private void UpdateViewSize()
+        {
+            _view.localScale = new Vector3(Radius, Radius, Radius);
+            ThreatScaleUpdate?.Invoke(Radius);
         }
 
         private float ValidateRadius()
         {
-            return Mathf.Clamp(_radius, 0.5f, 10f);
-        }
-
-        private void UpdateViewSize()
-        {
-            _view.localScale = new Vector3(_radius, _radius, _radius);
-            ThreatScaleUpdate?.Invoke(_radius);
+            return Mathf.Clamp(Radius, 0.5f, 10f);
         }
     }
 }

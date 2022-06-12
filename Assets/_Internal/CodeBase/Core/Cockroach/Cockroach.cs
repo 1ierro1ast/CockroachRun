@@ -1,4 +1,4 @@
-﻿using _Internal.CodeBase.Core.States;
+﻿using _Internal.CodeBase.Core.Cockroach.States;
 using _Internal.CodeBase.Infrastructure;
 using UnityEngine;
 using UnityEngine.AI;

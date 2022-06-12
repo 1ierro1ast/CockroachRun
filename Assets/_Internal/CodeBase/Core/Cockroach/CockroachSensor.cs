@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace _Internal.CodeBase.Core
+namespace _Internal.CodeBase.Core.Cockroach
 {
     [RequireComponent(typeof(SphereCollider))]
     public class CockroachSensor : MonoBehaviour

@@ -9,20 +9,17 @@ namespace _Internal.CodeBase.Core.Threat
     {
         private IInputService _inputService;
         private ThreatMover _threatMover;
-        private ThreatScaler _threatScaler;
 
-        public ThreatScaler ThreatScaler => _threatScaler;
-        
+        public ThreatScaler ThreatScaler { get; private set; }
+
         public void Initialize(IInputService inputService)
         {
             _inputService = inputService;
             _threatMover = GetComponent<ThreatMover>();
-            _threatScaler = GetComponent<ThreatScaler>();
+            ThreatScaler = GetComponent<ThreatScaler>();
 
             _threatMover.SetInputService(_inputService);
-            _threatScaler.SetInputService(inputService);
+            ThreatScaler.SetInputService(inputService);
         }
     }
-
-    
 }

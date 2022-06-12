@@ -1,8 +1,7 @@
 ﻿using _Internal.CodeBase.Infrastructure.StateMachine;
-using UnityEngine;
 using UnityEngine.AI;
 
-namespace _Internal.CodeBase.Core.States
+namespace _Internal.CodeBase.Core.Cockroach.States
 {
     public class RunToDestinationState : IState
     {

@@ -1,4 +1,5 @@
-﻿using _Internal.CodeBase.Infrastructure.Services.Factories;
+﻿using _Internal.CodeBase.Core.Ui;
+using _Internal.CodeBase.Infrastructure.Services.Factories;
 
 namespace _Internal.CodeBase.Infrastructure.StateMachine.States
 {
@@ -15,12 +16,18 @@ namespace _Internal.CodeBase.Infrastructure.StateMachine.States
 
         public void Exit()
         {
-            throw new System.NotImplementedException();
         }
 
         public void Enter()
         {
-            throw new System.NotImplementedException();
+            FinishPopup finishPopup = _uiFactory.CreateFinishPopup();
+            finishPopup.TryAgainButton.onClick.AddListener(OnTryAgainButtonClick);
+            finishPopup.Open();
+        }
+        
+        private void OnTryAgainButtonClick()
+        {
+            _gameStateMachine.Enter<LoadGameState, string>("GameScene");
         }
     }
 }
